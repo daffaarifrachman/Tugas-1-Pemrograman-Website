@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Agency - Profil Perusahaan (Tailwind)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">DigitalAgency</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium">Home</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-blue-600 font-medium">About Us</a></li>
+                    <li><a href="#services" class="text-gray-600 hover:text-blue-600 font-medium">Services</a></li>
+                    <li><a href="contact.php" class="text-gray-600 hover:text-blue-600 font-medium">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="bg-blue-600 text-white py-20 text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-4">We Help Great Companies Grow Up</h2>
+                <p class="text-lg mb-8">Layanan kami akan membantu bisnis Anda menjangkau audiens yang lebih luas.</p>
+                <a href="contact.php" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                    Hubungi Kami
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">About Us</h2>
+                <p class="text-gray-700 max-w-2xl mx-auto mb-8">
+                    Kami adalah tim profesional yang berdedikasi untuk kesuksesan digital Anda. Kami menganalisis, merancang, dan mengimplementasikan solusi web terbaik.
+                </p>
+                
+                <button id="toggle-info-btn" class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-5 rounded-lg transition duration-300">
+                    Tampilkan Visi Misi
+                </button>
+                <div id="more-info" style="display: none;" class="mt-6 text-left max-w-md mx-auto bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <p class="font-semibold text-gray-800"><strong>Visi:</strong> Menjadi mitra digital terdepan di Indonesia.</p>
+                    <p class="text-gray-700 mt-2"><strong>Misi:</strong> Memberikan solusi teknologi yang inovatif dan efektif.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:scale-105 transition duration-300">
+                        <h3 class="text-xl font-bold text-blue-600 mb-3">Website Design</h3>
+                        <p class="text-gray-700">Desain web yang modern, responsif, dan ramah pengguna.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:scale-105 transition duration-300">
+                        <h3 class="text-xl font-bold text-blue-600 mb-3">SEO & Marketing</h3>
+                        <p class="text-gray-700">Optimasi mesin pencari agar website Anda mudah ditemukan.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:scale-105 transition duration-300">
+                        <h3 class="text-xl font-bold text-blue-600 mb-3">Social Media</h3>
+                        <p class="text-gray-700">Manajemen media sosial untuk meningkatkan engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 DigitalAgency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
